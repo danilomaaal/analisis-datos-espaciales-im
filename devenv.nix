@@ -14,7 +14,7 @@
   packages = [ 
     pkgs.rPackages.tidyverse
     pkgs.rPackages.leaflet
-    pkgs.rPackages.leaflet_extras # broken, to allow it run: export NIXPKGS_ALLOW_BROKEN=1; devenv shell --impure
+    pkgs.rPackages.leaflet_extras # lib marked as broken, to allow evaluation run: export NIXPKGS_ALLOW_BROKEN=1; devenv shell --impure
     pkgs.rPackages.rsconnect
     pkgs.rPackages.sf
     pkgs.rPackages.usethis
@@ -25,7 +25,6 @@
     pkgs.rPackages.sfdep
     pkgs.rPackages.htmlwidgets
     pkgs.rPackages.janitor
-    pkgs.pandoc
   ];
 
 
