@@ -1,0 +1,1 @@
+options(browser = "xdg-open")
