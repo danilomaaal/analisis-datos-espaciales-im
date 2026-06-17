@@ -40,7 +40,7 @@ violencia_fam_cluster <- leaflet() |>
 
 htmlwidgets::saveWidget(
   violencia_fam_cluster,
-  file = "./assets/agrupado_violencia_familiar.html", 
+  file = "./assets/index.html",
   selfcontained = TRUE) 
 
 
