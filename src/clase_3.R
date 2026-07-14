@@ -67,6 +67,6 @@ ggplot(final_data) +
 
 
 
-ggsave(filename = "mapa.svg", plot = mapa)
+ggsave(filename = "./assets/mapa.svg", plot = mapa)
 
 
