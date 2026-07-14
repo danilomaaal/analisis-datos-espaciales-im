@@ -11,21 +11,21 @@
   };
   
 
-  packages = [ 
-    pkgs.rPackages.tidyverse
-    pkgs.rPackages.leaflet
-    pkgs.rPackages.leaflet_extras # broken, to allow it run: export NIXPKGS_ALLOW_BROKEN=1; devenv shell --impure
-    pkgs.rPackages.rsconnect
-    pkgs.rPackages.sf
-    pkgs.rPackages.usethis
-    pkgs.rPackages.ellmer
-    pkgs.rPackages.mapedit
-    pkgs.rPackages.osrm
-    pkgs.rPackages.bivariateLeaflet
-    pkgs.rPackages.sfdep
-    pkgs.rPackages.htmlwidgets
-    pkgs.rPackages.janitor
-    pkgs.pandoc
+  packages = with pkgs; [
+    rPackages.tidyverse
+    rPackages.leaflet
+    rPackages.leaflet_extras # lib marked as broken, to allow evaluation run: export NIXPKGS_ALLOW_BROKEN=1; devenv shell --impure
+    rPackages.rsconnect
+    rPackages.sf
+    rPackages.usethis
+    rPackages.ellmer
+    rPackages.mapedit
+    rPackages.osrm
+    rPackages.bivariateLeaflet
+    rPackages.sfdep
+    rPackages.htmlwidgets
+    rPackages.janitor
+    rPackages.cowplot
   ];
 
 
